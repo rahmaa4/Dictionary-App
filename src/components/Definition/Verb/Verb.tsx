@@ -2,7 +2,7 @@ import styles from "./Verb.module.scss";
 import WordType from "../../../UI/WordType/WordType"
 import Meaning from "../../../UI/Meaning/Meaning";
 import Example from "../../../UI/Example/Example";
-import { useState, useEffect, useRef} from "react";
+import { useState, useEffect} from "react";
 
 type VerbProp = {
     meanings: Record<string, any>[]
