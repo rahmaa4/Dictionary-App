@@ -7,9 +7,9 @@ const Banner = () => {
     
     return (
         <div className={styles.bannerWrapper}>
-            <div className={styles.logoWrapper}>
+            <a href="/" className={styles.logoWrapper}>
                 <img src={logo} alt="Book Logo" />
-            </div>
+            </a>
             <div className={styles.bannerToggles}>
                 <SelectFont />
                 <div className={styles.toggleSep}></div>
