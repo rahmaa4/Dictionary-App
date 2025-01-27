@@ -1,0 +1,36 @@
+@use "../../../styles/partials/variables" as * ;
+
+.nounWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.meaningsWrapper{
+    .meaningsList{
+        padding-top:25px ;
+        margin-left: 30px;
+        .meaningListItem{
+            list-style-type: disc;
+            color: $purple;
+            padding-left: 15px;
+            margin-bottom: 13px;
+        }
+    }
+}
+
+.synonWrapper{
+    display: flex;
+    align-items: start;
+    column-gap: 22px;
+    .synonList{
+        display: flex;
+        column-gap: 12px;
+        flex-wrap: wrap;
+        .synonWord{
+           color: $purple;
+           font-weight: bold; 
+           font-size: $fs-16;
+        }
+    }
+}

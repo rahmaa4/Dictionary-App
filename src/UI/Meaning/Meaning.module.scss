@@ -1,0 +1,7 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+.meaningText{
+    color: $black2;
+    font-size: $fs-16;
+    @include transition(color);
+}

@@ -1,0 +1,25 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+.errorContainer {
+    height: 50vh;
+    background-color: $grey3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20vh 0vw;
+    @include transition(background-color);
+    & *{
+        text-align: center;
+    }
+
+    h1{
+        font-size: $fs-24;
+        margin-bottom: 12px;
+        @include transition(color);
+    }
+
+    p{
+        padding: 0px 5vw;
+        color: $grey0;
+    }
+}

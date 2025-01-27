@@ -1,0 +1,48 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+
+.textAudioWrapper{
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .textWrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+       h1{
+        color: $black2;
+        font-size: $fs-64;
+        letter-spacing: -3px;
+        @include transition(color);
+       }
+       p{
+        color: $purple;
+        font-size: $fs-18;
+        letter-spacing: -1px;
+       }
+    }
+    }
+
+
+@media only screen and (max-width: 768px){
+    .textAudioWrapper{
+        .textWrapper{
+            h1{
+                font-size: $fs-48;
+                letter-spacing: -4px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .textAudioWrapper{
+        .textWrapper{
+            h1{
+                font-size: $fs-32;
+                letter-spacing: -4px;
+            }
+        }
+    }
+}

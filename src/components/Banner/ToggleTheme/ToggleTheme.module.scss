@@ -1,0 +1,35 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+
+.toggleWrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 14px ;
+    .toggleContainer{
+        width: 45px;
+        height: 22px;
+        border-radius: 14px;
+        background-color: $grey0;
+        padding: 2px 4px;
+        display: flex;
+        align-items: center;
+        @include transition(background-color);
+        .toggle{
+            width: 18px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: $grey3;
+            transition-property: transform;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.05s;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    svg[id="moonIcon"]{
+        width: 18px;
+        aspect-ratio: 1/1;
+    }
+}
