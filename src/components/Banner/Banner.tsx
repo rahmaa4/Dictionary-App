@@ -1,7 +1,8 @@
 import SelectFont from "./SelectFont/SelectFont";
 import ToggleTheme from "./ToggleTheme/ToggleTheme";
 import styles from "./Banner.module.scss";
-const logo = "src/assets/icons/logo.svg";
+
+const logo = "/logo.svg";
 
 const Banner = () => {
     
