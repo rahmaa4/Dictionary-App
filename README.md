@@ -1,7 +1,7 @@
 # Dictionary App
 ---
 A Small Project focused on implementing React & Typescript.
-This is a simple dictionary app that allows you type in any word in the English language. If the word is present in the dcitionary,
+This is a simple dictionary app that allows you type in any word in the English language. If the word is present in the dictionary,
 you will receive noun and verb definitions, where applicable! This was built following specifications defined inside a Figma file. 
 
 ## Core Features: 
