@@ -8,8 +8,7 @@ import { FontContext, QueryContext, ThemeContext } from "../../app/App.tsx";
 import {SERIF, MONO, SERIF_FONT, MONO_FONT, SANS_SERIF_FONT} from "../../library/constants.tsx";
 import { black2, grey3 } from "../../library/constants.tsx";
 import { handleDisplayInputError, handleHideInputError } from "../../library/helpers.tsx";
-
-const iconNewWindow = "src/assets/icons/icon-new-window.svg";
+import iconNewWindow from "/assets/icons/icon-new-window.svg";
 
 type DefinitionProp = {
     isSubmit: boolean;
