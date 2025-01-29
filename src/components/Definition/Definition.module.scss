@@ -23,6 +23,9 @@
             display: flex;
             flex-wrap: wrap;
             column-gap: 10px;
+            .sourceText{
+                color: $black2;
+            }
         }
     }
 }

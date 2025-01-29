@@ -71,15 +71,14 @@ const Definition = ({ isSubmit, setIsSubmit }: DefinitionProp) => {
 
 
     useEffect(() => {
-        const sourceLink = Array.from(document.getElementsByClassName(`${styles.sourceText}`)) as HTMLElement[];
+        const sourceLink = Array.from(document.getElementsByClassName(`${styles.sourceText}`))[0] as HTMLElement;
         if (sourceLink) {
             if (!isLight) {
-                sourceLink.forEach((el) => el.style.color = grey3);
+                sourceLink.style.color = grey3;
             } else {
-                sourceLink.forEach((el) => el.style.color = black2);
+                sourceLink.style.color = black2;
             }
         }
-      
     }, [isLight]);
 
 
