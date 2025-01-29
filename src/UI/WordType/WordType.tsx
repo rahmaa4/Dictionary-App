@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import styles from "./WordType.module.scss";
-import { FontContext, ThemeContext } from "../../app/App";
+import FontContext from "../../contexts/Font/FontContext";
+import ThemeContext from "../../contexts/Theme/ThemeContext";
 import { black2, grey3, MONO, MONO_FONT, SANS_SERIF_FONT, SERIF, SERIF_FONT } from "../../library/constants";
 
 type wordTypeProp = {

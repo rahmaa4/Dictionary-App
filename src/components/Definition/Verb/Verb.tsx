@@ -42,9 +42,10 @@ const Verb = ({ meanings, isLoading }: VerbProp) => {
                                         <ul className={styles.verbMeaningCont}>
                                             <li key={`verb-meaning-${index}`} className={styles.meaningListItem}><Meaning meaning={verbDef.definition} /></li>
                                         </ul>
-                                        {
-                                         verbDef.example && <Example key={`verb-example-${index}`}>{verbDef.example}</Example>
-                                        }
+                                        <div className={styles.verbExampleWrapper}>
+                                            {verbDef.example && <Example key={`verb-example-${index}`}>{verbDef.example}</Example>}
+                                         </div>
+                                      
                                    </div>
                         })
                 }

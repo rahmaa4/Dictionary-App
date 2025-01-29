@@ -1,6 +1,7 @@
 import {useContext, useEffect, useState } from "react";
 import styles from "./SelectFont.module.scss";
-import { FontContext, ThemeContext } from "../../../app/App";
+import FontContext from "../../../contexts/Font/FontContext";
+import ThemeContext from "../../../contexts/Theme/ThemeContext";
 import { grey3, black2, black0, SERIF_FONT, MONO_FONT, SANS_SERIF_FONT, purple } from "../../../library/constants";
 import { SERIF, SANS_SERIF, MONO } from "../../../library/constants";
 import { FontType } from "../../../library/types";
@@ -26,6 +27,23 @@ const SelectFont = () => {
 
             })
         })
+
+
+        return () => {
+            optionEls.forEach((el) => {
+                el.removeEventListener("mouseover", () => {
+                    el.style.color = purple;
+                })
+                el.removeEventListener("mouseleave", () => {
+                    if (isLight) {
+                        el.style.color = black2;
+                    } else {
+                        el.style.color = grey3;
+                    }
+    
+                })
+            })
+        }
     }, [isLight]);
 
 
@@ -53,7 +71,7 @@ const SelectFont = () => {
                     el.style.color = black2;
                 });
                 optionsCont.style.backgroundColor = grey3;
-                optionsCont.style.boxShadow = ` 0px 1px 30px  hsla(0, 0%, 0%, 10%)`;
+                optionsCont.style.boxShadow = ` 0px 1px 30px hsla(0, 0%, 0%, 10%)`;
             }
         } 
     }, [isLight]);

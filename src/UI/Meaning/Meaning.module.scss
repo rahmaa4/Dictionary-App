@@ -3,5 +3,10 @@
 .meaningText{
     color: $black2;
     font-size: $fs-16;
-    @include transition(color);
+}
+
+@media only screen and (max-width: 425px){
+    .meaningText{
+        font-size: $fs-14;
+    }
 }

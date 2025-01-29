@@ -20,11 +20,11 @@
         font-weight: 400;
         font-size: 16px;
         letter-spacing: -0.5px;
-        transition: background-color 200ms ease-in-out 0.2s , color 200ms ease-in-out 0.2s;
         &:focus{
             border: 1px solid $purple;
         }
         &::placeholder{
+            font-size: $fs-14;
             opacity: 25%;
         }
     }

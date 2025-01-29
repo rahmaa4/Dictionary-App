@@ -2,7 +2,7 @@ import styles from "./Noun.module.scss";
 import WordType from "../../../UI/WordType/WordType";
 import Meaning from "../../../UI/Meaning/Meaning";
 import { useEffect, useState, useContext } from "react";
-import { FontContext } from "../../../app/App";
+import FontContext from "../../../contexts/Font/FontContext";
 import { MONO, MONO_FONT, SANS_SERIF_FONT, SERIF, SERIF_FONT } from "../../../library/constants";
 type NounProp = {
     meanings: Record<string, any>[],

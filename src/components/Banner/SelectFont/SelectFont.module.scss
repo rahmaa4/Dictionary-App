@@ -7,11 +7,12 @@
         width: 100%;
         font-size: $fs-14;
         font-weight: 600;
+        text-transform: lowercase;
+        letter-spacing: -1px;
         background-image: url("/assets/icons/icon-arrow-down.svg");
         background-repeat: no-repeat;
         background-position-x: 100%;
         background-position-y: 50%;
-        @include transition(color);
     }
     .optionsContainer{
         width: 112%;
@@ -38,7 +39,8 @@
             
         }
         .option{
-            @include transition(color);
+            text-transform: lowercase;
+            letter-spacing: -1px;
             &:hover{
                 cursor: pointer;
             }
@@ -55,3 +57,5 @@
         }
     }
 }
+
+

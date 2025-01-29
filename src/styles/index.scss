@@ -42,9 +42,6 @@ html, body main {
     min-height: 100vh;
 } 
 
-body{
-    @include transition(background-color);
-}
 
 main{
     width: 45vw;
@@ -81,12 +78,12 @@ button:hover{
 
 @media only screen and (max-width: 550px) {
     main{
-        width: 92vw;
+        width: 93vw;
     }
 }
 
-@media only screen and (max-width: 425px) {
-    main{
-        width: 95vw;
+@media only screen and (max-width: 425px){
+    .greyText{
+        font-size: $fs-14
     }
 }

@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
+import ThemeContext from "../../../contexts/Theme/ThemeContext";
 import styles from "./ToggleTheme.module.scss";
-import { ThemeContext } from "../../../app/App";
 import { purple, grey0 } from "../../../library/constants";
 
 const moon = (

@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import styles from "./Example.module.scss";
-import { FontContext } from "../../app/App";
+import FontContext from "../../contexts/Font/FontContext";
 import { MONO, MONO_FONT, SANS_SERIF_FONT, SERIF, SERIF_FONT } from "../../library/constants";
 type ExampleProp = {
     children: React.ReactNode;

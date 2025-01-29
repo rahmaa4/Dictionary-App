@@ -14,14 +14,19 @@
         cursor: pointer;
     }
     .audioButtonIcon{
-        width: 28%;
+        width: 48px;
         aspect-ratio: 1/1;
-        position: relative;
-        left: 0.25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         svg{
+            position: relative;
             path{
                 @include transition(all)
             }
+        }
+        svg[id="play-icon"]{
+            left: 3px;
         }
         
     }
@@ -32,6 +37,9 @@
 
 @media only screen and (max-width: 425px) {
     .audioWrapper{
-            width: 48px;
+        width: 52px;
+        .audioButtonIcon{
+            width: 20px;
+        }
     }
 };

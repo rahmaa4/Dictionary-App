@@ -31,6 +31,17 @@
            color: $purple;
            font-weight: bold; 
            font-size: $fs-16;
+           letter-spacing: -1px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .synonWrapper{
+        .synonList{
+            .synonWord{
+                font-size: $fs-14;
+            }
         }
     }
 }

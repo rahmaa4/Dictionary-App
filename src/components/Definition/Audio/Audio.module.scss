@@ -14,7 +14,6 @@
         color: $black2;
         font-size: $fs-64;
         letter-spacing: -3px;
-        @include transition(color);
        }
        p{
         color: $purple;
@@ -40,9 +39,10 @@
     .textAudioWrapper{
         .textWrapper{
             h1{
-                font-size: $fs-32;
-                letter-spacing: -4px;
+                font-size: $fs-48;
+                letter-spacing: -4.5px;
             }
         }
     }
+    
 }

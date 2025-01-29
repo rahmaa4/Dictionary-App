@@ -13,7 +13,6 @@
         padding: 2px 4px;
         display: flex;
         align-items: center;
-        @include transition(background-color);
         .toggle{
             width: 18px;
             aspect-ratio: 1/1;

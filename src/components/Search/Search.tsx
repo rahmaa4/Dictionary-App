@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import styles from "./Search.module.scss";
-import { FontContext, QueryContext, ThemeContext } from "../../app/App";
+import FontContext from "../../contexts/Font/FontContext";
+import ThemeContext from "../../contexts/Theme/ThemeContext";
+import QueryContext from "../../contexts/Query/QueryContext";
 import {SERIF, MONO, SERIF_FONT, MONO_FONT, SANS_SERIF_FONT } from "../../library/constants";
 import { grey3, black1, black2, grey2 } from "../../library/constants";
 

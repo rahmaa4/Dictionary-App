@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import styles from "./ErrorUI.module.scss";
-import { FontContext, ThemeContext } from "../../app/App";
+import FontContext from "../../contexts/Font/FontContext";
+import ThemeContext from "../../contexts/Theme/ThemeContext";
 import { black0, grey3, black2, SERIF, MONO, SERIF_FONT, MONO_FONT, SANS_SERIF_FONT } from "../../library/constants";
 
 

@@ -1,10 +1,23 @@
+import { useContext, useEffect } from "react";
+import ThemeContext from "../../contexts/Theme/ThemeContext";
 import SelectFont from "./SelectFont/SelectFont";
 import ToggleTheme from "./ToggleTheme/ToggleTheme";
 import styles from "./Banner.module.scss";
+import logo from "/logo.svg";
+import { black0, grey3 } from "../../library/constants";
 
-const logo = "/logo.svg";
 
 const Banner = () => {
+    const { isLight } = useContext(ThemeContext);
+
+    useEffect(() => {
+        const mainEl = document.querySelector("body");
+        if (!isLight) {
+            mainEl!.style.backgroundColor = black0;
+        } else {
+            mainEl!.style.backgroundColor = grey3;
+        }
+    }, [isLight]);
     
     return (
         <div className={styles.bannerWrapper}>
